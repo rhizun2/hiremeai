@@ -1,0 +1,26 @@
+# ---- secrets (never upload) ----
+.env
+.env.*
+!.env.example
+
+# ---- Python backend ----
+__pycache__/
+*.pyc
+venv/
+.venv/
+env/
+
+# ---- Node / Vite frontend ----
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+
+# ---- deploy tool folders ----
+.vercel/
+
+# ---- editor / OS junk ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

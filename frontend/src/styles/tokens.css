@@ -1,0 +1,190 @@
+/* Deskfolio — generated from tokens.json */
+:root, [data-theme="dark"] {
+  --wall-violet: #6a4ff0; /* Wallpaper, upper-left bloom. Same in both themes — the desktop never changes. */
+  --wall-indigo: #3b2fd8; /* Wallpaper mid-tone between violet and blue. */
+  --wall-blue: #1f44f0; /* Wallpaper body; the dominant brand blue. */
+  --wall-navy: #0b1a8f; /* Wallpaper shadow fold; deepest brand hue. */
+  --wall-glint: #9fbaff; /* The light ribbon crossing the wallpaper diagonal. Decorative only, never text. */
+  --desk: #121217; /* Documentation/page ground outside the desktop. */
+  --on-desk: #f2f2f7; /* Text on desk. */
+  --on-desk-muted: #a1a1a8; /* Secondary text on desk. */
+  --menubar-glass: rgba(22, 16, 96, 0.55); /* Top menu bar fill over the wallpaper, with blur-glass. */
+  --on-glass: #ffffff; /* Menu bar text, desktop icon labels and hero text over the wallpaper (with shadow-label). */
+  --dock-glass: rgba(255, 255, 255, 0.22); /* Dock tray fill over the wallpaper, with blur-glass. */
+  --dock-edge: rgba(255, 255, 255, 0.42); /* 1px border around the dock tray. */
+  --window: #1e1e1f; /* Window body (the Ask Me chat). */
+  --window-bar: #262628; /* Window title bar. */
+  --window-edge: #3a3a3c; /* Window outline, bubble and chip borders, input outline, dividers. */
+  --ink: #f2f2f7; /* Primary text on window, window-bar, raised and chip. */
+  --ink-muted: #8e8e93; /* Placeholder and metadata text on window and raised. */
+  --raised: #2c2c2e; /* Assistant chat bubble and suggestion chip fill. */
+  --field: #161617; /* Chat input fill. */
+  --bubble-user: #38b0f5; /* Visitor's chat bubble. Source pairs it with white text at ~2.4:1 — below 4.5:1; kept exact from the source, use on-bubble-user for new work. */
+  --on-bubble-user: #04253a; /* Accessible text on bubble-user (≈7:1). The source uses white; prefer this. */
+  --accent: #0a84ff; /* Send icon, links, text selection, focus ring. Solid 3:1+ on window and field in both themes. */
+  --sparkle: #2f7bf5; /* The Ask Me sparkle glyph, on the white Ask Me button. */
+  --askme: #ffffff; /* Ask Me dock button fill — the one solid white object on the desktop. */
+  --on-askme: #1d1d1f; /* Ask Me button label on askme. */
+  --folder: #5ac8fa; /* Desktop folder body. */
+  --folder-tab: #8fdcff; /* Desktop folder back tab / top highlight. */
+  --light-close: #ff5f57; /* Window close dot. Always paired with position + aria-label, never colour alone. */
+  --light-min: #febc2e; /* Window minimise dot. */
+  --light-max: #28c840; /* Window zoom dot. */
+  --tile-files: #2f9bf7; /* Dock tile: Files. */
+  --tile-projects: #1c1c1e; /* Dock tile: Terminal/Projects. */
+  --tile-gallery: #ff9f0a; /* Dock tile: Gallery. */
+  --tile-contact: #d9a066; /* Dock tile: Contact. */
+  --action: #0a6ee0; /* Primary button fill (Send, Submit, Confirm). One per view. */
+  --on-action: #ffffff; /* Label on action. */
+  --danger: #ff6b63; /* Error text and invalid field borders on window and field. */
+  --danger-fill: #c62828; /* Destructive button fill. */
+  --on-danger: #ffffff; /* Label on danger-fill. */
+  --success: #32d74b; /* Success text/icons on window (always with a word or check icon). */
+  --warning: #ffd60a; /* Warning text/icons on window (always with a word or icon). */
+  --scrim: rgba(0, 0, 0, 0.45); /* Backdrop behind a modal Dialog. */
+  --popover: #242426; /* Menus, dropdowns, notifications — solid so text stays legible. */
+  --tooltip: #f2f2f7; /* Tooltip fill (inverted from the window). */
+  --on-tooltip: #1d1d1f; /* Tooltip text on tooltip. */
+  --tag: #1c3a5c; /* Tech-stack tag fill. */
+  --on-tag: #bcdcff; /* Tag text on tag. */
+  --selected: #0a6ee0; /* Selected row / segment / menu highlight fill; text on it is on-action. */
+  --field-edge: #6e6e73; /* Border of form controls (text field, select, checkbox, switch track off) — 3:1 on field and window. */
+  --shadow-window: 0 24px 64px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(0, 0, 0, 0.35); /* Floating windows over the wallpaper. */
+  --shadow-dock: 0 12px 32px rgba(8, 12, 80, 0.35); /* Dock tray. */
+  --shadow-tile: 0 2px 6px rgba(0, 0, 0, 0.25); /* Dock tiles and desktop file icons. */
+  --shadow-label: 0 1px 2px rgba(0, 0, 0, 0.6); /* Use as text-shadow on any on-glass text over the wallpaper. */
+  --shadow-popover: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(0, 0, 0, 0.2); /* Menus, notifications and tooltips. */
+}
+[data-theme="light"] {
+  --desk: #f5f5f7;
+  --on-desk: #1d1d1f;
+  --on-desk-muted: #5f5f66;
+  --window: #f6f6f8;
+  --window-bar: #e8e8ec;
+  --window-edge: #d2d2d7;
+  --ink: #1d1d1f;
+  --ink-muted: #6e6e73;
+  --raised: #e9e9ee;
+  --field: #ffffff;
+  --accent: #0a6ee0;
+  --action: #0a6ee0;
+  --danger: #c62828;
+  --success: #1b7f3a;
+  --warning: #8a5a00;
+  --popover: #fbfbfd;
+  --tooltip: #1d1d1f;
+  --on-tooltip: #f2f2f7;
+  --tag: #dcebff;
+  --on-tag: #0b3d78;
+  --selected: #0a6ee0;
+  --field-edge: #8a8a8f;
+}
+:root {
+  --space-1: 4px; /* Icon-to-label gap, dot gaps. */
+  --space-2: 8px; /* Traffic-light gap, chip stack gap, dock item gap. */
+  --space-3: 12px; /* Bubble/chip horizontal padding, dock tray padding. */
+  --space-4: 16px; /* Window content padding, message gap. */
+  --space-6: 24px; /* Menu bar item gap, desktop icon column inset. */
+  --space-8: 32px; /* Desktop icon vertical rhythm, dock bottom offset. */
+  --radius-sm: 6px; /* Menu bar hover highlight, small tags. */
+  --radius-tile: 12px; /* Dock tiles and the Ask Me button. */
+  --radius-window: 12px; /* Window corners. */
+  --radius-bubble: 16px; /* Chat bubbles. */
+  --radius-dock: 20px; /* Dock tray. */
+  --radius-pill: 999px; /* Suggestion chips, chat input, traffic-light dots. */
+  --radius-control: 8px; /* Buttons, text fields, selects, segmented control, menu rows. */
+  --radius-popover: 10px; /* Menus, notifications, tooltips. */
+  --wallpaper: linear-gradient(155deg, #6a4ff0 0%, #3b2fd8 28%, #1f44f0 52%, #0b1a8f 78%, #2a55f5 100%); /* Full-bleed desktop background behind everything. */
+  --tahoe-dark: linear-gradient(155deg, #6a4ff0 0%, #3b2fd8 28%, #1f44f0 52%, #0b1a8f 78%, #2a55f5 100%); /* tahoe-dark, the defualt mac wallpaper should be used as the background image. */
+  --blur-glass: 20px; /* backdrop-filter blur for menubar-glass and dock-glass. */
+  --font-display: "Gochi Hand", "Comic Sans MS", cursive;
+  --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", system-ui, sans-serif;
+  --text-hero-title: 400 96px/1 var(--font-display); /* The one hero word on the desktop, uppercase, on-glass. */
+  --text-hero-greeting: 400 30px/38px var(--font-display); /* Line above hero-title, sentence case, conversational. */
+  --text-menubar-brand: 700 13px/22px var(--font-ui); /* Owner name in the menu bar. */
+  --text-menubar-item: 500 13px/22px var(--font-ui); /* Menu bar links and clock. */
+  --text-window-title: 600 13px/20px var(--font-ui); /* Centred window title. */
+  --text-body: 400 14px/21px var(--font-ui); /* Chat bubbles, chips, input text. */
+  --text-body-strong: 600 14px/21px var(--font-ui); /* Chat greeting, Ask Me button label. */
+  --text-icon-label: 600 13px/16px var(--font-ui); /* Desktop icon label, centred, max two lines, on-glass with shadow-label. */
+  --text-dialog-title: 700 17px/22px var(--font-ui); /* Dialog and Finder window section headings. */
+  --text-field-label: 600 13px/18px var(--font-ui); /* Form field labels, above the field. */
+  --text-caption: 400 12px/16px var(--font-ui); /* Help and error text under fields, tooltip and tag text, timestamps. */
+}
+.hero-title {
+  font-family: var(--font-display);
+  font-size: 96px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.hero-greeting {
+  font-family: var(--font-display);
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.menubar-brand {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.menubar-item {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+.window-title {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.body {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.body-strong {
+  font-family: var(--font-ui);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.icon-label {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.dialog-title {
+  font-family: var(--font-ui);
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.field-label {
+  font-family: var(--font-ui);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+.caption {
+  font-family: var(--font-ui);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
